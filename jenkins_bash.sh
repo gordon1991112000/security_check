@@ -1,8 +1,6 @@
 #!/bin/bash
 echo ${domain_name}
-echo ${Flag}
 Flag="$(sed 's/\,/ /g' <<<$Flag)"
-echo ${Flag}
 array=${domain_name}
 
 for Domain in ${array[@]};do
