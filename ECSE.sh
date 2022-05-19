@@ -7,7 +7,7 @@
 ####### Send messgae to specific telegram group #######
 function notification(){
    #curl -s –max-time 10 -d "chat_id=-342387488&disable_web_page_preview=1&text=`echo -e '\U0001F198'`$1" https://api.telegram.org/bot731592033:AAGyaKK_bxK-mDtJgijwWE5Ldz16WN0pSKE/sendMessage
-   curl -s –max-time 10 -d "chat_id=-656722013&disable_web_page_preview=1&text=`echo -e '\U0001F198'`$1" https://api.telegram.org/bot5323535871:AAH3Q0rLrNg6GMwJDXgj83izEVhKf81S5rY/sendMessage
+   curl -s –max-time 10 -d "chat_id=-656722013&disable_web_page_preview=1&text=`echo -e '\U0001F198'`$1" https://api.telegram.org/bot5323535871:AAH3Q0rLrNg6GMwJDXgj83izEVhKf81S5rY/sendMessage | jq '.'
 }
 
 ####### Check any SSH login not using office gateway IP #######
